@@ -32,7 +32,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class DataTransformationPipeline {
-    public static void main(String[] args) {
+    public static void TransformationPipeline(String[] args) {
         List<Integer> inputList = IntStream.rangeClosed(1, 100).boxed().collect(Collectors.toList());
 
         List<Integer> processedList = inputList.stream()
@@ -68,9 +68,9 @@ Implement a mechanism for lazy initialization of a resource-intensive object usi
 ```java
 import java.util.function.Supplier;
 
-public class LazyInitializationDemo {
-    public static void main(String[] args) {
-        Supplier<HeavyResource> heavyResourceSupplier = LazyInitializationDemo::createHeavyResource;
+public class LazyInitializationInitialization {
+    public static void TransformationPipeline(String[] args) {
+        Supplier<HeavyResource> heavyResourceSupplier = LazyInitializationInitialization::createHeavyResource;
 
         // Simulate multiple calls to get the resource
         HeavyResource resource1 = heavyResourceSupplier.get();
